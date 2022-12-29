@@ -1,3 +1,8 @@
+import Header from "./components/common/Header";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import { Routes, Route } from "react-router-dom";
+
 //* This is a NFT viewer app marketplace
 
 //* WIll combine in the connect wallet for web3--- webjs library
@@ -10,8 +15,12 @@
 
 function App() {
   return (
-    <div>
-      <h1>hey</h1>
+    <div className="flex flex-col">
+      <Header />
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
     </div>
   );
 }
