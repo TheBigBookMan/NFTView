@@ -9,6 +9,8 @@ import { Routes, Route } from "react-router-dom";
 
 //* Users will be able to view their NFTs and interact...
 
+//* could have the information if the NFT is up on a website like OpenSea and golden eden (whatever solana one is)
+
 //* Maybe have a login database- MongoDB maybe
 
 //* Maybe allow users to interact and buy and sell- could be advanced and show can make a transaction happening
