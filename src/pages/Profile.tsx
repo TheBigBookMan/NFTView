@@ -1,3 +1,5 @@
+//* page can have information about the wallet- eth in it and recent transactions for NFTs
+
 const Profile = () => {
   return (
     <div>
