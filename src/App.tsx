@@ -1,5 +1,3 @@
-import './App.css'
-
 //* This is a NFT viewer app marketplace
 
 //* WIll combine in the connect wallet for web3--- webjs library
@@ -11,12 +9,11 @@ import './App.css'
 //* Maybe allow users to interact and buy and sell- could be advanced and show can make a transaction happening
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      </div
-  )
+    <div>
+      <h1>hey</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
