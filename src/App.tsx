@@ -31,7 +31,10 @@ function App() {
       <Header setAccountAdded={setAccountAdded} accountAdded={accountAdded} />
       <Routes>
         <Route index path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route
+          path="/profile"
+          element={<Profile accountAdded={accountAdded} />}
+        />
       </Routes>
     </div>
   );
