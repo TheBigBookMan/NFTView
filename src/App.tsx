@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import { Routes, Route } from "react-router-dom";
 
+//TODO GET BETTER FONTFAMILY
+
 //* This is a NFT viewer app marketplace
 
 //* WIll combine in the connect wallet for web3--- webjs library
