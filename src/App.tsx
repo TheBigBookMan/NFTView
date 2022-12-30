@@ -2,6 +2,7 @@ import Header from "./components/common/Header";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 //TODO GET BETTER FONTFAMILY
 
@@ -17,10 +18,17 @@ import { Routes, Route } from "react-router-dom";
 
 //* Maybe allow users to interact and buy and sell- could be advanced and show can make a transaction happening
 
+interface AccountTypes {
+  accountAdded: string | null;
+  setAccountAdded: () => void;
+}
+
 function App() {
+  const [accountAdded, setAccountAdded] = useState<AccountTypes>();
+  console.log(accountAdded);
   return (
     <div className="flex flex-col">
-      <Header />
+      <Header setAccountAdded={setAccountAdded} accountAdded={accountAdded} />
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
