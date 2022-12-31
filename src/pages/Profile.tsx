@@ -23,9 +23,17 @@ const Profile = ({ accountAdded }: any) => {
 
   return (
     <div className="flex flex-col h-full w-full p-4">
-      <h1 className="font-bold truncate text-lg">{accountAdded}</h1>
-      <h1 className="italic">Current balance: {userBalance}</h1>
-      <Transactions />
+      {!accountAdded ? (
+        <h1 className="font-bold text-3xl">
+          You need to connect your MetaMask to view.
+        </h1>
+      ) : (
+        <>
+          <h1 className="font-bold truncate text-lg">{accountAdded}</h1>
+          <h1 className="italic">Current balance: {userBalance} ETH</h1>
+          <Transactions />
+        </>
+      )}
     </div>
   );
 };
